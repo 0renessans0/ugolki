@@ -567,11 +567,10 @@ class Game(QMainWindow):
         position_choice_widget = QWidget()
         main_layout = QVBoxLayout()
 
-        header_label = QLabel("Выберите сложность расстановки фишек")
+        header_label = QLabel("Выберите уровень сложности")
         header_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         main_layout.addStretch()
-
         buttons_layout = QHBoxLayout()
         classic_position_button = self.createLevelButton("Легкий")
         random_position_button = self.createLevelButton("Средний")
